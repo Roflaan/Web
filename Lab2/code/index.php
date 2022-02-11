@@ -128,3 +128,55 @@ function printStringReturnNumber(string $str): int
 }
 $my_num = printStringReturnNumber("www");
 echo $my_num, "<br/>";
+
+
+//16 Функции
+function increaseEnthusiasm(string $str): string
+{
+    return $str . "!";
+}
+echo increaseEnthusiasm("Hello"), "<br/>";
+function repeatThreeTimes(string $str): string
+{
+    return $str . $str . $str;
+}
+echo repeatThreeTimes("Hello"), "<br/>";
+echo increaseEnthusiasm(repeatThreeTimes("Hello")), "<br/>";
+function cut(string $str, ?int $num = 10): string
+{
+    $result;
+    $i = 0;
+    while ($i < $num){
+        $result .= $str[$i++];
+    }
+    return $result;
+}
+echo cut("Hello world!", 5), "<br/>";
+
+//Рекурсия
+$arr = array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+function printArray(array $arr, int $i)
+{
+    if ($i < count($arr)){
+        echo $arr[$i], " ";
+        printArray($arr, ++$i);
+    }
+    return 0;
+}
+printArray($arr, 0);
+echo "<br/>";
+
+//Сумма цифр
+function sum($x)
+{
+    $result = 0;
+    while ($x > 0){
+        $result += $x % 10;
+        $x /= 10;
+    }
+    if ($result > 9){
+        $result = sum($result);
+    }
+    return $result;
+}
+echo sum(451), "<br/>";
