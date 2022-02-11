@@ -25,4 +25,14 @@ $days_per_language = $days / $num_languages;
 echo $days_per_language, " days she spent on each language<br/>";
 
 //12
-echo 8**2;
+echo 8**2, "<br/>";
+
+//13
+$my_num = 12;
+$answer = $my_num;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
+$answer -= $my_num;
+echo $answer, "<br/>";
