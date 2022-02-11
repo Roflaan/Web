@@ -16,3 +16,13 @@ echo $varInt - 13, "<br/>";
 $last_month = 1187.23;
 $this_month = 1089.98;
 echo "Difference between expences: ", $last_month - $this_month, "<br/>";
+
+//11
+$num_languages = 4;
+$months = 11;
+$days = 16 * $months;
+$days_per_language = $days / $num_languages;
+echo $days_per_language, " days she spent on each language<br/>";
+
+//12
+echo 8**2;
