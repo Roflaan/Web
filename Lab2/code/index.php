@@ -250,3 +250,55 @@ echo count($arr), "<br/>";
 $arr = ['a', 'b', 'c', 'd', 'e'];
 echo end($arr), "<br/>";
 echo prev($arr), "<br/>";
+
+
+//18
+function moreThan10(int $a, int $b): bool {
+    if ($a + $b > 10) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+function areEqual(int $a, int $b): bool {
+    if ($a === $b) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+$test = 0;
+echo ($test == 0) ? "Верно<br/>" : "Неверно<br/>";
+$age = 54;
+if ($age > 10 && $age < 99){
+    $sum = 0;
+    while($age > 0){
+        $sum += $age % 10;
+        $age /= 10;
+    }
+    if ($sum < 10){
+        echo "Сумма однозначна";
+    }
+    else{
+        echo "Сумма двузначна";
+    }
+}
+else{
+    if ($age < 10){
+        echo "Возраст меньше 10";
+    }
+    else{
+        echo "Возраст больше 99";
+    }
+}
+echo "<br/>";
+$arr = array(2,5,3);
+$sum = 0;
+if (3 === count($arr)){
+    foreach ($arr as $value){
+        $sum += $value;
+    }
+    echo $sum, "<br/>";
+}
