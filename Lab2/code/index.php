@@ -180,3 +180,73 @@ function sum($x)
     return $result;
 }
 echo sum(451), "<br/>";
+
+
+//17
+$arrX = array();
+$x = "x";
+for ($i = 0; $i < 10; $i++){
+    $arrX[$i] = $x;
+    $x .= "x";
+}
+print_r($arrX);
+echo "<br/>";
+
+function arrayFill(string $c, int $num): array{
+    $arr = array();
+    $i = 0;
+    while ($num > 0){
+        $arr[$i++] = $c;
+        $num--;
+    }
+    return $arr;
+}
+print_r(arrayFill("x", 10));
+echo "<br/>";
+
+$arr = array(array(1,2,3),array(4,5),array(6));
+$sum = 0;
+foreach ($arr as $value) {
+    foreach ($value as $value2){
+        $sum += $value2;
+    }
+}
+echo $sum, "<br/>";
+
+$l = 1;
+for ($i = 0; $i < 3; $i++){
+    for ($j = 0; $j < 3; $j++){
+        $arr[$i][$j] = $l++;
+    }
+}
+print_r($arr);
+echo "<br/>";
+
+$arr = array(2,5,3,9);
+$result = $arr[0] * $arr[1] + $arr[2] * $arr[3];
+echo $result, "<br/>";
+
+$user = [
+    "surname" => "Конев",
+    "name" => "Сергей",
+    "patronymic" => "Максимович",
+];
+foreach ($user as $value){
+    echo $value, " ";
+}
+echo "<br/>";
+
+$date = [
+    "year" => "2022",
+    "month" => "02",
+    "day" => "11",
+];
+echo $date["year"], "-", $date["month"], "-", $date["day"];
+echo "<br/>";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo count($arr), "<br/>";
+
+$arr = ['a', 'b', 'c', 'd', 'e'];
+echo end($arr), "<br/>";
+echo prev($arr), "<br/>";
