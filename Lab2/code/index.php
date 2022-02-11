@@ -117,4 +117,14 @@ while ($sum < 10){
     $sum += $arr[$i];
     $i++;
 }
-echo ++$i;
+echo "<br/>", ++$i, "<br/>";
+
+
+//15 Функции
+function printStringReturnNumber(string $str): int
+{
+    echo $str, "<br/>";
+    return 21;
+}
+$my_num = printStringReturnNumber("www");
+echo $my_num, "<br/>";
