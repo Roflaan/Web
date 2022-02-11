@@ -1,4 +1,5 @@
 <?php
+//1 Доступ по ссылке
 /* Imagine a lot of code here */
 $very_bad_unclear_name = "15 chicken wings";
 // Write your code here:
@@ -6,9 +7,10 @@ $order = &$very_bad_unclear_name;
 $order .= " and large fries";
 // Don't change the line below
 echo "\nYour order is: $very_bad_unclear_name.";
+echo "<br/>";
 
 
-//2
+//2  Числа
 $varInt = 25;
 echo "<br/>$varInt<br/>";
 $varFloat = 5.25;
@@ -17,21 +19,23 @@ echo $varInt - 13, "<br/>";
 $last_month = 1187.23;
 $this_month = 1089.98;
 echo "Difference between expences: ", $last_month - $this_month, "<br/>";
+echo "<br/>";
 
 
-//11
+//11 Умножение и деление
 $num_languages = 4;
 $months = 11;
 $days = 16 * $months;
 $days_per_language = $days / $num_languages;
 echo $days_per_language, " days she spent on each language<br/>";
+echo "<br/>";
 
 
-//12
-echo 8**2, "<br/>";
+//12 Степень
+echo 8 ** 2, "<br/>";
+echo "<br/>";
 
-
-//13
+//13 Операторы присваивания
 $my_num = 12;
 $answer = $my_num;
 $answer += 2;
@@ -40,15 +44,16 @@ $answer -= 2;
 $answer /= 2;
 $answer -= $my_num;
 echo $answer, "<br/>";
+echo "<br/>";
 
 
-//14
+//14 Математические функции
 //Работа с %
 $a = 10;
 $b = 3;
 echo $a % $b, "<br/>";
 if ($a % $b === 0) {
-    echo "Делится, разудьтат деления: ", $a / $b, "<br/>";
+    echo "Делится, результат деления: ", $a / $b, "<br/>";
 } else {
     echo "Делится с остатком, остаток: ", $a % $b, "<br/>";
 }
@@ -118,6 +123,7 @@ while ($sum < 10){
     $i++;
 }
 echo "<br/>", ++$i, "<br/>";
+echo "<br/>";
 
 
 //15 Функции
@@ -128,6 +134,7 @@ function printStringReturnNumber(string $str): int
 }
 $my_num = printStringReturnNumber("www");
 echo $my_num, "<br/>";
+echo "<br/>";
 
 
 //16 Функции
@@ -180,9 +187,10 @@ function sum($x)
     return $result;
 }
 echo sum(451), "<br/>";
+echo "<br/>";
 
 
-//17
+//17 Массивы
 $arrX = array();
 $x = "x";
 for ($i = 0; $i < 10; $i++){
@@ -250,9 +258,10 @@ echo count($arr), "<br/>";
 $arr = ['a', 'b', 'c', 'd', 'e'];
 echo end($arr), "<br/>";
 echo prev($arr), "<br/>";
+echo "<br/>";
 
 
-//18
+//18 Конструкция if else
 function moreThan10(int $a, int $b): bool {
     if ($a + $b > 10) {
         return true;
@@ -303,15 +312,17 @@ if (3 === count($arr)){
     echo $sum, "<br/>";
 }
 
-//19
+//19 Циклы
 for ($i=1; $i<=20; $i++){
     for ($j=1; $j<=$i; $j++){
         echo "x";
     }
     echo "<br/>";
 }
+echo "<br/>";
 
-//20
+
+//20 Комбинация функций
 $arr = array(2,5,3,9);
 echo array_sum($arr)/sizeof($arr), "<br/>";
 echo array_sum(range(1, 100)), "<br/>";
