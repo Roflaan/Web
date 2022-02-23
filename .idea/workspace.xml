@@ -26,8 +26,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab/code/lab3/Task2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\serge\Documents\Web\Lab\code\lab3\Task2" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -40,7 +46,9 @@
       <workItem from="1645454757828" duration="1912000" />
       <workItem from="1645456718114" duration="203000" />
       <workItem from="1645531511329" duration="131000" />
-      <workItem from="1645537462878" duration="9281000" />
+      <workItem from="1645537462878" duration="10208000" />
+      <workItem from="1645557104224" duration="46000" />
+      <workItem from="1645620086065" duration="9115000" />
     </task>
     <servers />
   </component>
