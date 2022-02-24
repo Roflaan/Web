@@ -4,3 +4,4 @@ if (!session_start()) {
     return;
 }
 echo "Ваши данные: ", $_SESSION['userName'], " ",$_SESSION['userSurname'], " ", $_SESSION['userAge'];
+?>

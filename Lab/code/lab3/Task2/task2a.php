@@ -21,5 +21,3 @@ if ($_POST["getTextInfo"]) {
     echo mb_strlen($_POST["text"]), " символов<br>";
 }
 ?>
-
-

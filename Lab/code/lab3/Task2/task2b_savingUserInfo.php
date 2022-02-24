@@ -8,6 +8,3 @@ $_SESSION['userSurname'] = $_POST['userSurname'];
 $_SESSION['userAge'] = $_POST['userAge'];
 header("Location: task2b_newPage.php");
 ?>
-
-
-
