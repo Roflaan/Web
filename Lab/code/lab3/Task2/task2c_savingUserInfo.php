@@ -10,4 +10,3 @@ $_SESSION["userData"] = [
     "userBirthDate" => $_POST["userBirthDate"]
 ];
 header("Location: task2c_newPage.php");
-

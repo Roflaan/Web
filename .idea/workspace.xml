@@ -27,7 +27,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Lab/code/lab3/Task2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -48,7 +48,9 @@
       <workItem from="1645531511329" duration="131000" />
       <workItem from="1645537462878" duration="10208000" />
       <workItem from="1645557104224" duration="46000" />
-      <workItem from="1645620086065" duration="17972000" />
+      <workItem from="1645620086065" duration="23014000" />
+      <workItem from="1645718428259" duration="11102000" />
+      <workItem from="1645869405969" duration="19710000" />
     </task>
     <servers />
   </component>
