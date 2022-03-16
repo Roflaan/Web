@@ -7,7 +7,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
+    <pharConfigPath>$PROJECT_DIR$/Lab/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
@@ -15,6 +16,11 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/Lab/vendor/composer" />
+    </include_path>
   </component>
   <component name="ProjectId" id="25QMF5WG7Iy3DA3nMNkM3bIhies" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -50,7 +56,15 @@
       <workItem from="1645557104224" duration="46000" />
       <workItem from="1645620086065" duration="23014000" />
       <workItem from="1645718428259" duration="11102000" />
-      <workItem from="1645869405969" duration="19710000" />
+      <workItem from="1645869405969" duration="20209000" />
+      <workItem from="1645957692430" duration="11724000" />
+      <workItem from="1646592075632" duration="2189000" />
+      <workItem from="1647353987146" duration="4000" />
+      <workItem from="1647354003765" duration="8000" />
+      <workItem from="1647355584349" duration="6546000" />
+      <workItem from="1647370489149" duration="846000" />
+      <workItem from="1647371407674" duration="30000" />
+      <workItem from="1647417298800" duration="11109000" />
     </task>
     <servers />
   </component>
