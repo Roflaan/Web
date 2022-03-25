@@ -23,11 +23,14 @@ $result = mysqli_query($link, "SELECT*FROM ad");
     <p>Список объявлений:</p>
     <table border="1">
         <?php
+        echo '<td>' . "Категория" . '<td>' . '<td>' . "Название" . '<td>' . '<td>' . "Email" . '<td>' . '<td>' . "Описание" . '<td>' . '<tr>';
         while($row = $result->fetch_assoc())
         {
             echo '<td>' . $row['category'] . '<td>' . '<td>' . $row['title'] . '<td>' . '<td>' . $row['email'] . '<td>' . '<td>' . $row['description'] . '<td>';
             echo "<tr>";
         }
+        $result->close();
+        $link->close();
         ?>
     </table>
   </body>
