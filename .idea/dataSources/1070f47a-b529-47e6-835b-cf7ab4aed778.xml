@@ -1022,24 +1022,77 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="277" parent="1" name="sys">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <user id="278" parent="1" name="mysql.infoschema">
+    <schema id="278" parent="1" name="web">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <user id="279" parent="1" name="mysql.infoschema">
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="279" parent="1" name="mysql.session">
+    <user id="280" parent="1" name="mysql.session">
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="280" parent="1" name="mysql.sys">
+    <user id="281" parent="1" name="mysql.sys">
       <Host>localhost</Host>
-      <Plugin>caching_sha2_password</Plugin>
-    </user>
-    <user id="281" parent="1" name="root">
       <Plugin>caching_sha2_password</Plugin>
     </user>
     <user id="282" parent="1" name="root">
+      <Plugin>caching_sha2_password</Plugin>
+    </user>
+    <user id="283" parent="1" name="root">
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
+    <table id="284" parent="278" name="ad">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="285" parent="284" name="id">
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="286" parent="284" name="email">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="287" parent="284" name="title">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="288" parent="284" name="description">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="289" parent="284" name="category">
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="290" parent="284" name="created">
+      <DataType>datetime|0s</DataType>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <index id="291" parent="284" name="id">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="292" parent="284" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+    </key>
+    <key id="293" parent="284" name="id">
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
   </database-model>
 </dataSource>

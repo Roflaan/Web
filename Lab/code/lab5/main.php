@@ -1,5 +1,6 @@
 <?php
-
+$link = mysqli_connect('db', 'root', '123', 'web');
+$result = mysqli_query($link, "SELECT*FROM ad");
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,7 +23,11 @@
     <p>Список объявлений:</p>
     <table border="1">
         <?php
-
+        while($row = $result->fetch_assoc())
+        {
+            echo '<td>' . $row['category'] . '<td>' . '<td>' . $row['title'] . '<td>' . '<td>' . $row['email'] . '<td>' . '<td>' . $row['description'] . '<td>';
+            echo "<tr>";
+        }
         ?>
     </table>
   </body>
