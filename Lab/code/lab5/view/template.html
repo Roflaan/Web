@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Объявления</title>
+</head>
+<body>
+<form method="post">
+  <label> Создать объявление<br><br>
+    Название<br>
+    <input type="text" name="title"><br>
+    Категория<br>
+    <select name="category">
+      <option>Купить</option>
+      <option>Продать</option>
+    </select><br>
+    Email<br>
+    <input type="email" name="email"><br>
+    Описание<br>
+    <textarea cols="50" rows="5" name="description"></textarea>
+    <br><br>
+    <input type="submit" name="submit" value="Добавить"><br><br>
+  </label>
+</form>
+
+<table border="1" width="100%">
+  <tr>
+    <td>Категория</td>
+    <td>Email</td>
+    <td>Название</td>
+    <td>Описание</td>
+  </tr>
+  tableplaceholder
+</table>
+</body>
+</html>
